@@ -1,21 +1,15 @@
-//import {Board,Leds} from 'johnny-five';
 Template.controlArduino.onCreated(function(){
-	//const five = require('johnny-five');
-	//console.log(five.Board);
-	//const bor = new five.Board();
-	/*var board = new five.Board({
-	  	repl:false
-	});
-	console.log(board);*/
-	//var five = Meteor.npmRequire('johnny-five');
-});
-Template.controlArduino.helpers({
-	isActive(e){
-		return false;
-	}
+	this.status= new ReactiveVar(0);
 });
 Template.controlArduino.events({
-	'click .btn'(e){
-		$(e.target).addClass("orange");
+	'click .btn'(e){	
+		if(Template.instance().status.get()){
+			Template.instance().status.set(0);
+			$(e.target).addClass("orange");
+		}else{
+			Template.instance().status.set(1);
+			$(e.target).removeClass("orange");
+		}
+		Meteor.call('sendAction',9,Template.instance().status.get());
 	}
 });
