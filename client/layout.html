@@ -2,10 +2,10 @@
 	<link rel="shorcout ico" href="home.png">
 </head>
 <template name="layout">
-	<div class="container">
-		{{#if onSession}}
-			<button class="btn" id="btnLogout">Cerrar sesion</button>
+	{{#if onSession}}
+			<button class="btn red" id="btnLogout">Cerrar sesion</button>
 		{{/if}}
+	<div class="container">
 		{{#momentum plugin="growl"}}
 			{{>yield}}
 		{{/momentum}}
