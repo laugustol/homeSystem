@@ -2,12 +2,12 @@ const five = require('johnny-five');
 board = new five.Board({repl:false});
 board.on('ready',function(){
     Meteor.methods({
-        sendAction(socket,status){
-            const leds = new five.Leds([socket]);
+        sendAction(position,status){
+            const leds = new five.Leds([9,10,11]);
             if(status){
-                leds[0].off();
+                leds[position].off();
             }else{
-                leds[0].on();
+                leds[position].on();
             }
         }
     });

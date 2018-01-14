@@ -2,1396 +2,86 @@
 
 => Started proxy.
 => Started MongoDB.
-[34mW20180108-12:23:45.621(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:23:45.830(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:23:45.830(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:23:45.831(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:23:45.831(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:23:45.831(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:23:45.832(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:23:45.832(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:23:46.071(-4)? [39m
-[34mI20180108-12:23:46.072(-4)? [39m    *******************************************
-[34mI20180108-12:23:46.073(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:23:46.073(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:23:46.073(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:23:46.073(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:23:46.074(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:23:46.074(-4)? [39m    *           PORT: 29355     *
-[34mI20180108-12:23:46.074(-4)? [39m    *******************************************
-[34mI20180108-12:23:46.074(-4)? [39m
+[34mW20180108-16:59:35.315(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
+[34mW20180108-16:59:35.439(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
+[34mW20180108-16:59:35.440(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
+[34mW20180108-16:59:35.440(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
+[34mW20180108-16:59:35.441(-4)? (STDERR) [39m[35m[39m
+[34mW20180108-16:59:35.441(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
+[34mW20180108-16:59:35.442(-4)? (STDERR) [39m[35m[39m
+[34mW20180108-16:59:35.442(-4)? (STDERR) [39m[35min the root directory of your application.[39m
+[34mI20180108-16:59:36.595(-4)? [39m
+[34mI20180108-16:59:36.597(-4)? [39m    *******************************************
+[34mI20180108-16:59:36.597(-4)? [39m    *           Starting homeSystem           *
+[34mI20180108-16:59:36.597(-4)? [39m    *         Author: Augusto Alvarez         *
+[34mI20180108-16:59:36.598(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
+[34mI20180108-16:59:36.598(-4)? [39m    * https://github.com/laugustol/homeSystem *
+[34mI20180108-16:59:36.598(-4)? [39m    * URL: http://192.168.1.104            *
+[34mI20180108-16:59:36.599(-4)? [39m    *           PORT: 28505     *
+[34mI20180108-16:59:36.599(-4)? [39m    *******************************************
+[34mI20180108-16:59:36.599(-4)? [39m
+[34mI20180108-16:59:36.687(-4)? [39m1515445176686 Board Looking for connected device  
 => Started your app.
 
 => App running at: http://192.168.1.104
-=> Client modified -- refreshing
-[34mI20180108-12:25:05.134(-4)? [39mException while invoking method 'sendAction' TypeError: homeSystem.actionArduino is not a function
-[34mI20180108-12:25:05.135(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/controlArduino.js:26:20)
-[34mI20180108-12:25:05.136(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-12:25:05.136(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-12:25:05.137(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-12:25:05.137(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-12:25:05.137(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-12:25:05.138(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-12:25:05.138(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-12:25:05.138(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-12:25:05.139(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-=> Server modified -- restarting...                                   [34mW20180108-12:27:30.641(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:27:30.642(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:27:30.642(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:27:30.643(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:27:30.643(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:27:30.643(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:27:30.643(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:27:30.644(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:27:33.917(-4)? [39m
-[34mI20180108-12:27:33.934(-4)? [39m    *******************************************
-[34mI20180108-12:27:33.935(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:27:33.935(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:27:33.935(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:27:33.936(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:27:33.936(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:27:33.937(-4)? [39m    *           PORT: 25604     *
-[34mI20180108-12:27:33.937(-4)? [39m    *******************************************
-[34mI20180108-12:27:33.938(-4)? [39m
-=> Meteor server restarted
-[34mI20180108-12:27:37.977(-4)? [39m1515428857976 Available /dev/ttyUSB0  
-[34mI20180108-12:27:38.271(-4)? [39m1515428858270 Connected /dev/ttyUSB0  
-[34mW20180108-12:27:41.241(-4)? (STDERR) [39m[35m(node:23701) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): TypeError: Cannot read property 'blink' of undefined[39m
-[34mW20180108-12:27:41.242(-4)? (STDERR) [39m[35m(node:23701) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.[39m
-[34mI20180108-12:28:02.073(-4)? [39mHOLAAAAAAAAAAA
-[34mI20180108-12:28:02.200(-4)? [39mException while invoking method 'sendAction' TypeError: homeSystem.actionArduino is not a function
-[34mI20180108-12:28:02.201(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/controlArduino.js:28:20)
-[34mI20180108-12:28:02.202(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-12:28:02.202(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-12:28:02.202(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-12:28:02.203(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-12:28:02.203(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-12:28:02.203(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-12:28:02.204(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-12:28:02.204(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-12:28:02.204(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-=> Server modified -- restarting...                                   [34mW20180108-12:28:47.282(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:28:47.283(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:28:47.283(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:28:47.284(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:28:47.284(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:28:47.284(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:28:47.284(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:28:47.285(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:28:47.864(-4)? [39m
-[34mI20180108-12:28:47.865(-4)? [39m    *******************************************
-[34mI20180108-12:28:47.865(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:28:47.865(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:28:47.865(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:28:47.866(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:28:47.866(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:28:47.866(-4)? [39m    *           PORT: 22622     *
-[34mI20180108-12:28:47.866(-4)? [39m    *******************************************
-[34mI20180108-12:28:47.867(-4)? [39m
-=> Meteor server restarted
-[34mI20180108-12:28:53.222(-4)? [39m1515428933221 Available /dev/ttyUSB0  
-[34mI20180108-12:28:53.698(-4)? [39m1515428933697 Connected /dev/ttyUSB0  
-[34mI20180108-12:29:04.908(-4)? [39mHOLAAAAAAAAAAA
-[34mI20180108-12:29:04.911(-4)? [39m9
-[34mI20180108-12:29:05.491(-4)? [39mHOLAAAAAAAAAAA
-[34mI20180108-12:29:05.492(-4)? [39m9
-=> Server modified -- restarting...                                   [34mW20180108-12:31:26.093(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:31:26.094(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:31:26.094(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:31:26.094(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:31:26.094(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:31:26.095(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:31:26.095(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:31:26.095(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:31:27.283(-4)? [39m
-[34mI20180108-12:31:27.283(-4)? [39m    *******************************************
-[34mI20180108-12:31:27.284(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:31:27.284(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:31:27.284(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:31:27.285(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:31:27.285(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:31:27.285(-4)? [39m    *           PORT: 27097     *
-[34mI20180108-12:31:27.286(-4)? [39m    *******************************************
-[34mI20180108-12:31:27.286(-4)? [39m
-=> Meteor server restarted
-[34mI20180108-12:31:28.632(-4)? [39m1515429088631 Available /dev/ttyUSB0  
-[34mI20180108-12:31:28.687(-4)? [39m1515429088687 Connected /dev/ttyUSB0  
-[34mI20180108-12:31:32.787(-4)? [39mHOLAAAAAAAAAAA
-=> Server modified -- restarting...                                   [34mW20180108-12:37:13.092(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:37:13.093(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:37:13.093(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:37:13.094(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:37:13.094(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:37:13.095(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:37:13.095(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:37:13.095(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:37:13.516(-4)? [39m
-[34mI20180108-12:37:13.516(-4)? [39m    *******************************************
-[34mI20180108-12:37:13.516(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:37:13.517(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:37:13.517(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:37:13.517(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:37:13.518(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:37:13.518(-4)? [39m    *           PORT: 23040     *
-[34mI20180108-12:37:13.518(-4)? [39m    *******************************************
-[34mI20180108-12:37:13.519(-4)? [39m
-=> Meteor server restarted
-[34mI20180108-12:37:14.316(-4)? [39m1515429434316 Available /dev/ttyUSB0  
-[34mI20180108-12:37:14.372(-4)? [39m1515429434371 Connected /dev/ttyUSB0  
-[34mW20180108-12:37:17.341(-4)? (STDERR) [39m[35m(node:24842) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 2): TypeError: Cannot read property 'blink' of undefined[39m
-[34mW20180108-12:37:17.342(-4)? (STDERR) [39m[35m(node:24842) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.[39m
-=> Server modified -- restarting...                                   [34mW20180108-12:38:17.881(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:38:17.882(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:38:17.883(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:38:17.883(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:38:17.884(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:38:17.884(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:38:17.884(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:38:17.885(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:38:18.091(-4)? [39m
-[34mI20180108-12:38:18.092(-4)? [39m    *******************************************
-[34mI20180108-12:38:18.093(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:38:18.093(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:38:18.093(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:38:18.094(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:38:18.094(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:38:18.095(-4)? [39m    *           PORT: 20071     *
-[34mI20180108-12:38:18.095(-4)? [39m    *******************************************
-[34mI20180108-12:38:18.095(-4)? [39m
-[34mW20180108-12:38:18.264(-4)? (STDERR) [39m[35m/home/laptop1/.meteor/packages/meteor-tool/.1.6.0_1.obe9u1++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:280[39m
-[34mW20180108-12:38:18.266(-4)? (STDERR) [39m[35m						throw(ex);[39m
-[34mW20180108-12:38:18.266(-4)? (STDERR) [39m[35m						^[39m
-[34mW20180108-12:38:18.267(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:38:18.267(-4)? (STDERR) [39m[35mTypeError: Cannot read property 'type' of null[39m
-[34mW20180108-12:38:18.268(-4)? (STDERR) [39m[35m    at Function.Pins.normalize (/var/www/homeSystem/node_modules/johnny-five/lib/board.pins.js:91:25)[39m
-[34mW20180108-12:38:18.268(-4)? (STDERR) [39m[35m    at Led.Board.Component (/var/www/homeSystem/node_modules/johnny-five/lib/board.js:850:23)[39m
-[34mW20180108-12:38:18.269(-4)? (STDERR) [39m[35m    at new Led (/var/www/homeSystem/node_modules/johnny-five/lib/led/led.js:143:19)[39m
-[34mW20180108-12:38:18.269(-4)? (STDERR) [39m[35m    at Leds.Collection (/var/www/homeSystem/node_modules/johnny-five/lib/mixins/collection.js:53:25)[39m
-[34mW20180108-12:38:18.270(-4)? (STDERR) [39m[35m    at new Leds (/var/www/homeSystem/node_modules/johnny-five/lib/led/leds.js:25:14)[39m
-[34mW20180108-12:38:18.270(-4)? (STDERR) [39m[35m    at server/controlArduino.js:24:18[39m
-[34mW20180108-12:38:18.271(-4)? (STDERR) [39m[35m    at Function.time (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:309:28)[39m
-[34mW20180108-12:38:18.271(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:423:13[39m
-[34mW20180108-12:38:18.271(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:464:5[39m
-[34mW20180108-12:38:18.272(-4)? (STDERR) [39m[35m    at Function.run (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:510:12)[39m
-=> Exited with code: 1
-[34mW20180108-12:38:19.993(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:38:19.994(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:38:19.995(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:38:19.995(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:38:19.996(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:38:19.996(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:38:19.997(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:38:19.997(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:38:20.201(-4)? [39m
-[34mI20180108-12:38:20.202(-4)? [39m    *******************************************
-[34mI20180108-12:38:20.202(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:38:20.202(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:38:20.203(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:38:20.203(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:38:20.203(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:38:20.203(-4)? [39m    *           PORT: 28255     *
-[34mI20180108-12:38:20.203(-4)? [39m    *******************************************
-[34mI20180108-12:38:20.204(-4)? [39m
-[34mW20180108-12:38:20.349(-4)? (STDERR) [39m[35m/home/laptop1/.meteor/packages/meteor-tool/.1.6.0_1.obe9u1++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:280[39m
-[34mW20180108-12:38:20.350(-4)? (STDERR) [39m[35m						throw(ex);[39m
-[34mW20180108-12:38:20.350(-4)? (STDERR) [39m[35m						^[39m
-[34mW20180108-12:38:20.351(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:38:20.351(-4)? (STDERR) [39m[35mTypeError: Cannot read property 'type' of null[39m
-[34mW20180108-12:38:20.351(-4)? (STDERR) [39m[35m    at Function.Pins.normalize (/var/www/homeSystem/node_modules/johnny-five/lib/board.pins.js:91:25)[39m
-[34mW20180108-12:38:20.352(-4)? (STDERR) [39m[35m    at Led.Board.Component (/var/www/homeSystem/node_modules/johnny-five/lib/board.js:850:23)[39m
-[34mW20180108-12:38:20.352(-4)? (STDERR) [39m[35m    at new Led (/var/www/homeSystem/node_modules/johnny-five/lib/led/led.js:143:19)[39m
-[34mW20180108-12:38:20.353(-4)? (STDERR) [39m[35m    at Leds.Collection (/var/www/homeSystem/node_modules/johnny-five/lib/mixins/collection.js:53:25)[39m
-[34mW20180108-12:38:20.353(-4)? (STDERR) [39m[35m    at new Leds (/var/www/homeSystem/node_modules/johnny-five/lib/led/leds.js:25:14)[39m
-[34mW20180108-12:38:20.353(-4)? (STDERR) [39m[35m    at server/controlArduino.js:24:18[39m
-[34mW20180108-12:38:20.354(-4)? (STDERR) [39m[35m    at Function.time (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:309:28)[39m
-[34mW20180108-12:38:20.354(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:423:13[39m
-[34mW20180108-12:38:20.355(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:464:5[39m
-[34mW20180108-12:38:20.355(-4)? (STDERR) [39m[35m    at Function.run (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:510:12)[39m
-=> Exited with code: 1
-[34mW20180108-12:38:21.908(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:38:21.908(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:38:21.909(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:38:21.909(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:38:21.909(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:38:21.910(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:38:21.910(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:38:21.910(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:38:22.110(-4)? [39m
-[34mI20180108-12:38:22.111(-4)? [39m    *******************************************
-[34mI20180108-12:38:22.111(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:38:22.111(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:38:22.111(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:38:22.112(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:38:22.112(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:38:22.112(-4)? [39m    *           PORT: 27725     *
-[34mI20180108-12:38:22.112(-4)? [39m    *******************************************
-[34mI20180108-12:38:22.113(-4)? [39m
-[34mW20180108-12:38:22.265(-4)? (STDERR) [39m[35m/home/laptop1/.meteor/packages/meteor-tool/.1.6.0_1.obe9u1++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:280[39m
-[34mW20180108-12:38:22.266(-4)? (STDERR) [39m[35m						throw(ex);[39m
-[34mW20180108-12:38:22.267(-4)? (STDERR) [39m[35m						^[39m
-[34mW20180108-12:38:22.268(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:38:22.268(-4)? (STDERR) [39m[35mTypeError: Cannot read property 'type' of null[39m
-[34mW20180108-12:38:22.268(-4)? (STDERR) [39m[35m    at Function.Pins.normalize (/var/www/homeSystem/node_modules/johnny-five/lib/board.pins.js:91:25)[39m
-[34mW20180108-12:38:22.269(-4)? (STDERR) [39m[35m    at Led.Board.Component (/var/www/homeSystem/node_modules/johnny-five/lib/board.js:850:23)[39m
-[34mW20180108-12:38:22.269(-4)? (STDERR) [39m[35m    at new Led (/var/www/homeSystem/node_modules/johnny-five/lib/led/led.js:143:19)[39m
-[34mW20180108-12:38:22.270(-4)? (STDERR) [39m[35m    at Leds.Collection (/var/www/homeSystem/node_modules/johnny-five/lib/mixins/collection.js:53:25)[39m
-[34mW20180108-12:38:22.270(-4)? (STDERR) [39m[35m    at new Leds (/var/www/homeSystem/node_modules/johnny-five/lib/led/leds.js:25:14)[39m
-[34mW20180108-12:38:22.270(-4)? (STDERR) [39m[35m    at server/controlArduino.js:24:18[39m
-[34mW20180108-12:38:22.271(-4)? (STDERR) [39m[35m    at Function.time (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:309:28)[39m
-[34mW20180108-12:38:22.271(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:423:13[39m
-[34mW20180108-12:38:22.271(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:464:5[39m
-[34mW20180108-12:38:22.272(-4)? (STDERR) [39m[35m    at Function.run (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:510:12)[39m
-=> Exited with code: 1
-=> Your application is crashing. Waiting for file change.
-=> Modified -- restarting.
-[34mW20180108-12:43:00.193(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:43:00.194(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:43:00.195(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:43:00.195(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:43:00.195(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:43:00.196(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:43:00.196(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:43:00.197(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:43:00.424(-4)? [39m
-[34mI20180108-12:43:00.425(-4)? [39m    *******************************************
-[34mI20180108-12:43:00.425(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:43:00.425(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:43:00.426(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:43:00.426(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:43:00.426(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:43:00.426(-4)? [39m    *           PORT: 21533     *
-[34mI20180108-12:43:00.427(-4)? [39m    *******************************************
-[34mI20180108-12:43:00.427(-4)? [39m
-=> Meteor server restarted
-[34mI20180108-12:43:00.719(-4)? [39m1515429780718 Available /dev/ttyUSB0  
-[34mI20180108-12:43:00.730(-4)? [39m1515429780729 Connected /dev/ttyUSB0  
-=> Server modified -- restarting...                                   [34mW20180108-12:45:41.433(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:45:41.434(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:45:41.434(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:45:41.434(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:45:41.435(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:45:41.435(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:45:41.436(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:45:41.439(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:45:41.670(-4)? [39m
-[34mI20180108-12:45:41.671(-4)? [39m    *******************************************
-[34mI20180108-12:45:41.671(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:45:41.671(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:45:41.672(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:45:41.672(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:45:41.672(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:45:41.672(-4)? [39m    *           PORT: 28243     *
-[34mI20180108-12:45:41.673(-4)? [39m    *******************************************
-[34mI20180108-12:45:41.673(-4)? [39m
-[34mW20180108-12:45:41.815(-4)? (STDERR) [39m[35m/home/laptop1/.meteor/packages/meteor-tool/.1.6.0_1.obe9u1++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:280[39m
-[34mW20180108-12:45:41.815(-4)? (STDERR) [39m[35m						throw(ex);[39m
-[34mW20180108-12:45:41.816(-4)? (STDERR) [39m[35m						^[39m
-[34mW20180108-12:45:41.816(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:45:41.817(-4)? (STDERR) [39m[35mReferenceError: leds is not defined[39m
-[34mW20180108-12:45:41.817(-4)? (STDERR) [39m[35m    at server/controlArduino.js:18:5[39m
-[34mW20180108-12:45:41.817(-4)? (STDERR) [39m[35m    at Function.time (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:309:28)[39m
-[34mW20180108-12:45:41.818(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:423:13[39m
-[34mW20180108-12:45:41.818(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:464:5[39m
-[34mW20180108-12:45:41.818(-4)? (STDERR) [39m[35m    at Function.run (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:510:12)[39m
-[34mW20180108-12:45:41.819(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:462:11[39m
-=> Exited with code: 1
-[34mW20180108-12:45:43.534(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:45:43.535(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:45:43.536(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:45:43.537(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:45:43.537(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:45:43.538(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:45:43.538(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:45:43.538(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:45:43.781(-4)? [39m
-[34mI20180108-12:45:43.782(-4)? [39m    *******************************************
-[34mI20180108-12:45:43.782(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:45:43.782(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:45:43.782(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:45:43.782(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:45:43.783(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:45:43.783(-4)? [39m    *           PORT: 29745     *
-[34mI20180108-12:45:43.783(-4)? [39m    *******************************************
-[34mI20180108-12:45:43.783(-4)? [39m
-[34mW20180108-12:45:43.927(-4)? (STDERR) [39m[35m/home/laptop1/.meteor/packages/meteor-tool/.1.6.0_1.obe9u1++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:280[39m
-[34mW20180108-12:45:43.928(-4)? (STDERR) [39m[35m						throw(ex);[39m
-[34mW20180108-12:45:43.929(-4)? (STDERR) [39m[35m						^[39m
-[34mW20180108-12:45:43.930(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:45:43.930(-4)? (STDERR) [39m[35mReferenceError: leds is not defined[39m
-[34mW20180108-12:45:43.931(-4)? (STDERR) [39m[35m    at server/controlArduino.js:18:5[39m
-[34mW20180108-12:45:43.931(-4)? (STDERR) [39m[35m    at Function.time (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:309:28)[39m
-[34mW20180108-12:45:43.931(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:423:13[39m
-[34mW20180108-12:45:43.932(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:464:5[39m
-[34mW20180108-12:45:43.932(-4)? (STDERR) [39m[35m    at Function.run (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:510:12)[39m
-[34mW20180108-12:45:43.933(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:462:11[39m
-=> Exited with code: 1
-[34mW20180108-12:45:45.636(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:45:45.637(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:45:45.637(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:45:45.638(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:45:45.638(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:45:45.638(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:45:45.638(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:45:45.639(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:45:45.841(-4)? [39m
-[34mI20180108-12:45:45.841(-4)? [39m    *******************************************
-[34mI20180108-12:45:45.841(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:45:45.842(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:45:45.842(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:45:45.842(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:45:45.842(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:45:45.842(-4)? [39m    *           PORT: 25682     *
-[34mI20180108-12:45:45.844(-4)? [39m    *******************************************
-[34mI20180108-12:45:45.844(-4)? [39m
-[34mW20180108-12:45:45.977(-4)? (STDERR) [39m[35m/home/laptop1/.meteor/packages/meteor-tool/.1.6.0_1.obe9u1++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:280[39m
-[34mW20180108-12:45:45.978(-4)? (STDERR) [39m[35m						throw(ex);[39m
-[34mW20180108-12:45:45.978(-4)? (STDERR) [39m[35m						^[39m
-[34mW20180108-12:45:45.979(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:45:45.979(-4)? (STDERR) [39m[35mReferenceError: leds is not defined[39m
-[34mW20180108-12:45:45.980(-4)? (STDERR) [39m[35m    at server/controlArduino.js:18:5[39m
-[34mW20180108-12:45:45.980(-4)? (STDERR) [39m[35m    at Function.time (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:309:28)[39m
-[34mW20180108-12:45:45.980(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:423:13[39m
-[34mW20180108-12:45:45.981(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:464:5[39m
-[34mW20180108-12:45:45.981(-4)? (STDERR) [39m[35m    at Function.run (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:510:12)[39m
-[34mW20180108-12:45:45.982(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:462:11[39m
-=> Exited with code: 1
-=> Your application is crashing. Waiting for file change.
-=> Modified -- restarting.
-[34mW20180108-12:46:23.667(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:46:23.667(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:46:23.668(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:46:23.668(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:46:23.668(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:46:23.669(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:46:23.669(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:46:23.669(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:46:23.884(-4)? [39m
-[34mI20180108-12:46:23.885(-4)? [39m    *******************************************
-[34mI20180108-12:46:23.885(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:46:23.885(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:46:23.886(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:46:23.886(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:46:23.886(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:46:23.886(-4)? [39m    *           PORT: 29821     *
-[34mI20180108-12:46:23.886(-4)? [39m    *******************************************
-[34mI20180108-12:46:23.887(-4)? [39m
-[34mW20180108-12:46:24.029(-4)? (STDERR) [39m[35m/home/laptop1/.meteor/packages/meteor-tool/.1.6.0_1.obe9u1++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:280[39m
-[34mW20180108-12:46:24.030(-4)? (STDERR) [39m[35m						throw(ex);[39m
-[34mW20180108-12:46:24.031(-4)? (STDERR) [39m[35m						^[39m
-[34mW20180108-12:46:24.031(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:46:24.032(-4)? (STDERR) [39m[35mTypeError: Cannot read property 'type' of null[39m
-[34mW20180108-12:46:24.032(-4)? (STDERR) [39m[35m    at Function.Pins.normalize (/var/www/homeSystem/node_modules/johnny-five/lib/board.pins.js:91:25)[39m
-[34mW20180108-12:46:24.033(-4)? (STDERR) [39m[35m    at Led.Board.Component (/var/www/homeSystem/node_modules/johnny-five/lib/board.js:850:23)[39m
-[34mW20180108-12:46:24.034(-4)? (STDERR) [39m[35m    at new Led (/var/www/homeSystem/node_modules/johnny-five/lib/led/led.js:143:19)[39m
-[34mW20180108-12:46:24.034(-4)? (STDERR) [39m[35m    at Leds.Collection (/var/www/homeSystem/node_modules/johnny-five/lib/mixins/collection.js:53:25)[39m
-[34mW20180108-12:46:24.035(-4)? (STDERR) [39m[35m    at new Leds (/var/www/homeSystem/node_modules/johnny-five/lib/led/leds.js:25:14)[39m
-[34mW20180108-12:46:24.035(-4)? (STDERR) [39m[35m    at server/controlArduino.js:18:16[39m
-[34mW20180108-12:46:24.035(-4)? (STDERR) [39m[35m    at Function.time (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:309:28)[39m
-[34mW20180108-12:46:24.036(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:423:13[39m
-[34mW20180108-12:46:24.036(-4)? (STDERR) [39m[35m    at /var/www/homeSystem/.meteor/local/build/programs/server/boot.js:464:5[39m
-[34mW20180108-12:46:24.037(-4)? (STDERR) [39m[35m    at Function.run (/var/www/homeSystem/.meteor/local/build/programs/server/profile.js:510:12)[39m
-=> Exited with code: 1
-=> Your application is crashing. Waiting for file change.
-=> Modified -- restarting.
-[34mW20180108-12:46:52.382(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:46:52.383(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:46:52.383(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:46:52.383(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:46:52.383(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:46:52.384(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:46:52.384(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:46:52.384(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:46:52.632(-4)? [39m
-[34mI20180108-12:46:52.632(-4)? [39m    *******************************************
-[34mI20180108-12:46:52.633(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:46:52.633(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:46:52.633(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:46:52.633(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:46:52.634(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:46:52.634(-4)? [39m    *           PORT: 21912     *
-[34mI20180108-12:46:52.634(-4)? [39m    *******************************************
-[34mI20180108-12:46:52.634(-4)? [39m
-=> Meteor server restarted
-[34mI20180108-12:46:52.934(-4)? [39m1515430012933 Available /dev/ttyUSB0  
-[34mI20180108-12:46:52.944(-4)? [39m1515430012943 Connected /dev/ttyUSB0  
-=> Server modified -- restarting...                                   [34mW20180108-12:50:04.503(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:50:04.505(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:50:04.505(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:50:04.506(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:50:04.506(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:50:04.507(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:50:04.507(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:50:04.507(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:50:04.707(-4)? [39m
-[34mI20180108-12:50:04.708(-4)? [39m    *******************************************
-[34mI20180108-12:50:04.708(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:50:04.708(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:50:04.708(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:50:04.709(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:50:04.709(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:50:04.709(-4)? [39m    *           PORT: 23216     *
-[34mI20180108-12:50:04.709(-4)? [39m    *******************************************
-[34mI20180108-12:50:04.710(-4)? [39m
-=> Meteor server restarted
-[34mI20180108-12:50:04.949(-4)? [39m1515430204949 Available /dev/ttyUSB0  
-[34mI20180108-12:50:04.958(-4)? [39m1515430204957 Connected /dev/ttyUSB0  
-=> Server modified -- restarting...                                   [34mW20180108-12:50:58.637(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-12:50:58.639(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-12:50:58.639(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-12:50:58.639(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-12:50:58.639(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:50:58.640(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-12:50:58.640(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-12:50:58.640(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-12:50:58.846(-4)? [39m
-[34mI20180108-12:50:58.846(-4)? [39m    *******************************************
-[34mI20180108-12:50:58.847(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-12:50:58.847(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-12:50:58.847(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-12:50:58.847(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-12:50:58.847(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-12:50:58.848(-4)? [39m    *           PORT: 20324     *
-[34mI20180108-12:50:58.848(-4)? [39m    *******************************************
-[34mI20180108-12:50:58.848(-4)? [39m
-=> Meteor server restarted
-[34mI20180108-12:50:59.089(-4)? [39m1515430259089 Available /dev/ttyUSB0  
-[34mI20180108-12:50:59.098(-4)? [39m1515430259097 Connected /dev/ttyUSB0  
-=> Client modified -- refreshing
-[34mI20180108-12:51:19.210(-4)? [39m1515430279209 Board Looking for connected device  
-=> Client modified -- refreshing
-=> Server modified -- restarting...                                   [34mW20180108-13:02:37.217(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:02:37.218(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:02:37.219(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:02:37.222(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:02:37.223(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:02:37.223(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:02:37.224(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:02:37.224(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:02:37.630(-4)? [39m
-[34mI20180108-13:02:37.630(-4)? [39m    *******************************************
-[34mI20180108-13:02:37.630(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:02:37.630(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:02:37.631(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:02:37.631(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:02:37.631(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:02:37.631(-4)? [39m    *           PORT: 26642     *
-[34mI20180108-13:02:37.631(-4)? [39m    *******************************************
-[34mI20180108-13:02:37.632(-4)? [39m
-=> Meteor server restarted
-=> Client modified -- refreshing
-=> Server modified -- restarting...                                   [34mW20180108-13:03:15.021(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:03:15.022(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:03:15.022(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:03:15.023(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:03:15.023(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:03:15.024(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:03:15.024(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:03:15.024(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:03:15.526(-4)? [39m
-[34mI20180108-13:03:15.527(-4)? [39m    *******************************************
-[34mI20180108-13:03:15.528(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:03:15.528(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:03:15.528(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:03:15.529(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:03:15.529(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:03:15.530(-4)? [39m    *           PORT: 29063     *
-[34mI20180108-13:03:15.530(-4)? [39m    *******************************************
-[34mI20180108-13:03:15.531(-4)? [39m
-=> Meteor server restarted
-[34mI20180108-13:03:15.980(-4)? [39m1515430995980 Available /dev/ttyUSB0  
-[34mI20180108-13:03:15.995(-4)? [39m1515430995994 Connected /dev/ttyUSB0  
-[34mI20180108-13:06:49.397(-4)? [39m1515431209397 Board Looking for connected device  
-=> Server modified -- restarting...                                   [34mW20180108-13:07:45.397(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:07:45.398(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:07:45.399(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:07:45.399(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:07:45.399(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:07:45.399(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:07:45.400(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:07:45.400(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:07:45.874(-4)? [39m1515431265874 Available /dev/ttyUSB0  
-[34mI20180108-13:07:45.883(-4)? [39m1515431265883 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:07:48.838(-4)? [39m
-[34mI20180108-13:07:48.839(-4)? [39m    *******************************************
-[34mI20180108-13:07:48.840(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:07:48.841(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:07:48.841(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:07:48.842(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:07:48.842(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:07:48.843(-4)? [39m    *           PORT: 25749     *
-[34mI20180108-13:07:48.843(-4)? [39m    *******************************************
-[34mI20180108-13:07:48.844(-4)? [39m
-=> Server modified -- restarting...                                   [34mW20180108-13:19:56.461(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:19:56.462(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:19:56.462(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:19:56.463(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:19:56.463(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:19:56.464(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:19:56.464(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:19:56.464(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:19:57.598(-4)? [39m1515431997597 Available /dev/ttyUSB0  
-[34mI20180108-13:19:57.638(-4)? [39m1515431997638 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:20:00.591(-4)? [39m
-[34mI20180108-13:20:00.592(-4)? [39m        *******************************************
-[34mI20180108-13:20:00.592(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:20:00.593(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:20:00.593(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:20:00.594(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:20:00.594(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:20:00.594(-4)? [39m        *           PORT: 29893     *
-[34mI20180108-13:20:00.595(-4)? [39m        *******************************************
-[34mI20180108-13:20:00.595(-4)? [39m
-=> Server modified -- restarting...                                   => Server modified -- restarting...                                   [34mW20180108-13:26:02.160(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:26:02.161(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:26:02.161(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:26:02.162(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:26:02.162(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:26:02.162(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:26:02.163(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:26:02.164(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:26:03.216(-4)? [39m1515432363216 Available /dev/ttyUSB0  
-[34mI20180108-13:26:03.256(-4)? [39m1515432363256 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:26:06.209(-4)? [39m
-[34mI20180108-13:26:06.210(-4)? [39m        *******************************************
-[34mI20180108-13:26:06.210(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:26:06.211(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:26:06.211(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:26:06.211(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:26:06.212(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:26:06.212(-4)? [39m        *           PORT: 29760     *
-[34mI20180108-13:26:06.213(-4)? [39m        *******************************************
-[34mI20180108-13:26:06.213(-4)? [39m
-=> Server modified -- restarting...                                   [34mW20180108-13:29:10.570(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:29:10.571(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:29:10.571(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:29:10.571(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:29:10.572(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:29:10.572(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:29:10.572(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:29:10.573(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:29:11.038(-4)? [39m1515432551037 Available /dev/ttyUSB0  
-[34mI20180108-13:29:11.047(-4)? [39m1515432551046 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:29:13.999(-4)? [39m
-[34mI20180108-13:29:14.001(-4)? [39m        *******************************************
-[34mI20180108-13:29:14.001(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:29:14.002(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:29:14.003(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:29:14.003(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:29:14.004(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:29:14.004(-4)? [39m        *           PORT: 26331     *
-[34mI20180108-13:29:14.005(-4)? [39m        *******************************************
-[34mI20180108-13:29:14.006(-4)? [39m
-=> Server modified -- restarting...                                   [34mW20180108-13:29:34.899(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:29:34.900(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:29:34.900(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:29:34.901(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:29:34.901(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:29:34.903(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:29:34.903(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:29:34.904(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:29:35.372(-4)? [39m1515432575371 Available /dev/ttyUSB0  
-[34mI20180108-13:29:35.382(-4)? [39m1515432575381 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:29:38.335(-4)? [39m
-[34mI20180108-13:29:38.337(-4)? [39m        *******************************************
-[34mI20180108-13:29:38.337(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:29:38.338(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:29:38.339(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:29:38.340(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:29:38.341(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:29:38.342(-4)? [39m        *           PORT: 21453     *
-[34mI20180108-13:29:38.343(-4)? [39m        *******************************************
-[34mI20180108-13:29:38.344(-4)? [39m
-=> Server modified -- restarting...                                   [34mW20180108-13:35:10.218(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:35:10.219(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:35:10.220(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:35:10.220(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:35:10.220(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:35:10.221(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:35:10.221(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:35:10.222(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:35:11.248(-4)? [39m1515432911248 Available /dev/ttyUSB0  
-[34mI20180108-13:35:11.283(-4)? [39m1515432911282 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:35:14.238(-4)? [39m
-[34mI20180108-13:35:14.240(-4)? [39m        *******************************************
-[34mI20180108-13:35:14.241(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:35:14.241(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:35:14.242(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:35:14.242(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:35:14.243(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:35:14.243(-4)? [39m        *           PORT: 24618     *
-[34mI20180108-13:35:14.244(-4)? [39m        *******************************************
-[34mI20180108-13:35:14.244(-4)? [39m
-=> Server modified -- restarting...                                   [34mW20180108-13:36:11.311(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:36:11.312(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:36:11.313(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:36:11.313(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:36:11.314(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:36:11.314(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:36:11.314(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:36:11.315(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:36:11.747(-4)? [39m1515432971747 Available /dev/ttyUSB0  
-[34mI20180108-13:36:11.756(-4)? [39m1515432971755 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:36:14.711(-4)? [39m
-[34mI20180108-13:36:14.712(-4)? [39m        *******************************************
-[34mI20180108-13:36:14.713(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:36:14.713(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:36:14.714(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:36:14.714(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:36:14.715(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:36:14.715(-4)? [39m        *           PORT: 21123     *
-[34mI20180108-13:36:14.715(-4)? [39m        *******************************************
-[34mI20180108-13:36:14.715(-4)? [39m
-=> Client modified -- refreshing=> Client modified -- refreshing (x2)=> Client modified -- refreshing (x3)
-=> Server modified -- restarting...                                   [34mW20180108-13:38:04.906(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:38:04.907(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:38:04.907(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:38:04.908(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:38:04.908(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:38:04.908(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:38:04.909(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:38:04.909(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:38:05.363(-4)? [39m1515433085362 Available /dev/ttyUSB0  
-[34mI20180108-13:38:05.374(-4)? [39m1515433085373 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:38:08.327(-4)? [39m
-[34mI20180108-13:38:08.328(-4)? [39m        *******************************************
-[34mI20180108-13:38:08.328(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:38:08.329(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:38:08.329(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:38:08.329(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:38:08.330(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:38:08.330(-4)? [39m        *           PORT: 21916     *
-[34mI20180108-13:38:08.331(-4)? [39m        *******************************************
-[34mI20180108-13:38:08.332(-4)? [39m
-[34mI20180108-13:38:16.297(-4)? [39m1 aqui
-[34mI20180108-13:38:17.417(-4)? [39m1 aqui
-[34mI20180108-13:38:18.513(-4)? [39m1 aqui
-[34mI20180108-13:38:38.875(-4)? [39m1 aqui
-=> Client modified -- refreshing
-=> Server modified -- restarting...                                   [34mW20180108-13:39:17.834(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:39:17.835(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:39:17.836(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:39:17.837(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:39:17.837(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:39:17.838(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:39:17.838(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:39:17.839(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-=> Meteor server restarted
-[34mI20180108-13:39:18.420(-4)? [39m1515433158419 Available /dev/ttyUSB0  
-[34mI20180108-13:39:18.429(-4)? [39m1515433158428 Connected /dev/ttyUSB0  
-[34mI20180108-13:39:21.381(-4)? [39m
-[34mI20180108-13:39:21.382(-4)? [39m        *******************************************
-[34mI20180108-13:39:21.382(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:39:21.383(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:39:21.383(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:39:21.383(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:39:21.384(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:39:21.384(-4)? [39m        *           PORT: 27470     *
-[34mI20180108-13:39:21.384(-4)? [39m        *******************************************
-[34mI20180108-13:39:21.385(-4)? [39m
-[34mI20180108-13:39:23.907(-4)? [39m1 aqui
-[34mI20180108-13:39:24.600(-4)? [39m0 aqui
-[34mI20180108-13:39:25.541(-4)? [39m0 aqui
-[34mI20180108-13:39:26.212(-4)? [39m0 aqui
 => Client modified -- refreshing=> Client modified -- refreshing (x2)=> Client modified -- refreshing (x3)=> Client modified -- refreshing (x4)
-=> Server modified -- restarting...                                   => Server modified -- restarting...                                   [34mW20180108-13:44:00.891(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:44:00.892(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:44:00.893(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:44:00.893(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:44:00.894(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:44:00.894(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:44:00.894(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:44:00.895(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:44:02.015(-4)? [39m1515433442015 Available /dev/ttyUSB0  
-[34mI20180108-13:44:02.048(-4)? [39m1515433442048 Connected /dev/ttyUSB0  
+=> Server modified -- restarting...                                   [34mW20180108-17:08:49.472(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
+[34mW20180108-17:08:49.474(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
+[34mW20180108-17:08:49.475(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
+[34mW20180108-17:08:49.476(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
+[34mW20180108-17:08:49.477(-4)? (STDERR) [39m[35m[39m
+[34mW20180108-17:08:49.477(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
+[34mW20180108-17:08:49.477(-4)? (STDERR) [39m[35m[39m
+[34mW20180108-17:08:49.478(-4)? (STDERR) [39m[35min the root directory of your application.[39m
+[34mI20180108-17:08:50.905(-4)? [39m
+[34mI20180108-17:08:50.906(-4)? [39m    *******************************************
+[34mI20180108-17:08:50.906(-4)? [39m    *           Starting homeSystem           *
+[34mI20180108-17:08:50.907(-4)? [39m    *         Author: Augusto Alvarez         *
+[34mI20180108-17:08:50.907(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
+[34mI20180108-17:08:50.908(-4)? [39m    * https://github.com/laugustol/homeSystem *
+[34mI20180108-17:08:50.908(-4)? [39m    * URL: http://192.168.1.104            *
+[34mI20180108-17:08:50.908(-4)? [39m    *           PORT: 23136     *
+[34mI20180108-17:08:50.908(-4)? [39m    *******************************************
+[34mI20180108-17:08:50.909(-4)? [39m
+[34mI20180108-17:08:51.002(-4)? [39m1515445731000 Board Looking for connected device  
 => Meteor server restarted
-[34mI20180108-13:44:05.001(-4)? [39m
-[34mI20180108-13:44:05.002(-4)? [39m        *******************************************
-[34mI20180108-13:44:05.002(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:44:05.003(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:44:05.005(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:44:05.005(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:44:05.006(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:44:05.007(-4)? [39m        *           PORT: 21068     *
-[34mI20180108-13:44:05.007(-4)? [39m        *******************************************
-[34mI20180108-13:44:05.008(-4)? [39m
-[34mI20180108-13:44:07.207(-4)? [39m1 aqui
-[34mI20180108-13:44:08.032(-4)? [39m0 aqui
-[34mI20180108-13:44:08.947(-4)? [39m1 aqui
-[34mI20180108-13:44:09.508(-4)? [39m0 aqui
-=> Client modified -- refreshing
-[34mI20180108-13:45:02.689(-4)? [39m1 aqui
-[34mI20180108-13:45:03.414(-4)? [39m0 aqui
-[34mI20180108-13:45:04.112(-4)? [39m1 aqui
-[34mI20180108-13:45:05.125(-4)? [39m0 aqui
-[34mI20180108-13:45:06.078(-4)? [39m1 aqui
-[34mI20180108-13:45:09.218(-4)? [39m0 aqui
-[34mI20180108-13:45:09.695(-4)? [39m1 aqui
-=> Client modified -- refreshing=> Client modified -- refreshing (x2)=> Client modified -- refreshing (x3)
-[34mI20180108-13:46:03.838(-4)? [39m1 aqui
-[34mI20180108-13:46:04.102(-4)? [39m0 aqui
-[34mI20180108-13:46:04.542(-4)? [39m1 aqui
-=> Server modified -- restarting...                                   [34mW20180108-13:46:30.888(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:46:30.888(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:46:30.889(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:46:30.889(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:46:30.889(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:46:30.890(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:46:30.890(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:46:30.890(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:46:31.400(-4)? [39m1515433591399 Available /dev/ttyUSB0  
-[34mI20180108-13:46:31.410(-4)? [39m1515433591410 Connected /dev/ttyUSB0  
+=> Server modified -- restarting...                                   [34mW20180108-17:13:07.062(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
+[34mW20180108-17:13:07.063(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
+[34mW20180108-17:13:07.064(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
+[34mW20180108-17:13:07.065(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
+[34mW20180108-17:13:07.065(-4)? (STDERR) [39m[35m[39m
+[34mW20180108-17:13:07.066(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
+[34mW20180108-17:13:07.066(-4)? (STDERR) [39m[35m[39m
+[34mW20180108-17:13:07.067(-4)? (STDERR) [39m[35min the root directory of your application.[39m
+[34mI20180108-17:13:08.274(-4)? [39m
+[34mI20180108-17:13:08.275(-4)? [39m    *******************************************
+[34mI20180108-17:13:08.275(-4)? [39m    *           Starting homeSystem           *
+[34mI20180108-17:13:08.276(-4)? [39m    *         Author: Augusto Alvarez         *
+[34mI20180108-17:13:08.276(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
+[34mI20180108-17:13:08.276(-4)? [39m    * https://github.com/laugustol/homeSystem *
+[34mI20180108-17:13:08.276(-4)? [39m    * URL: http://192.168.1.104            *
+[34mI20180108-17:13:08.276(-4)? [39m    *           PORT: 22176     *
+[34mI20180108-17:13:08.277(-4)? [39m    *******************************************
+[34mI20180108-17:13:08.277(-4)? [39m
+[34mI20180108-17:13:08.363(-4)? [39m1515445988362 Board Looking for connected device  
 => Meteor server restarted
-[34mI20180108-13:46:34.376(-4)? [39m
-[34mI20180108-13:46:34.377(-4)? [39m        *******************************************
-[34mI20180108-13:46:34.377(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:46:34.377(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:46:34.377(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:46:34.378(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:46:34.378(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:46:34.378(-4)? [39m        *           PORT: 29472     *
-[34mI20180108-13:46:34.378(-4)? [39m        *******************************************
-[34mI20180108-13:46:34.378(-4)? [39m
-=> Server modified -- restarting...                                   => Server modified -- restarting...                                   [34mW20180108-13:47:51.903(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:47:51.904(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:47:51.904(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:47:51.904(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:47:51.904(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:47:51.905(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:47:51.905(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:47:51.905(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:47:52.269(-4)? [39m
-[34mI20180108-13:47:52.269(-4)? [39m    *******************************************
-[34mI20180108-13:47:52.270(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:47:52.270(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:47:52.270(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:47:52.271(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:47:52.271(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:47:52.271(-4)? [39m    *           PORT: 26664     *
-[34mI20180108-13:47:52.272(-4)? [39m    *******************************************
-[34mI20180108-13:47:52.272(-4)? [39m
-[34mI20180108-13:47:52.374(-4)? [39m1515433672373 Available /dev/ttyUSB0  
-[34mI20180108-13:47:52.382(-4)? [39m1515433672382 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:47:55.335(-4)? [39m
-[34mI20180108-13:47:55.335(-4)? [39m        *******************************************
-[34mI20180108-13:47:55.336(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:47:55.336(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:47:55.336(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:47:55.336(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:47:55.337(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:47:55.337(-4)? [39m        *           PORT: 26664     *
-[34mI20180108-13:47:55.337(-4)? [39m        *******************************************
-[34mI20180108-13:47:55.338(-4)? [39m
-=> Server modified -- restarting...                                   [34mW20180108-13:47:59.744(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:47:59.745(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:47:59.745(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:47:59.746(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:47:59.746(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:47:59.746(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:47:59.746(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:47:59.747(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:48:00.196(-4)? [39m
-[34mI20180108-13:48:00.196(-4)? [39m    *******************************************
-[34mI20180108-13:48:00.197(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:48:00.197(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:48:00.197(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:48:00.197(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:48:00.198(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:48:00.198(-4)? [39m    *           PORT: 29905     *
-[34mI20180108-13:48:00.198(-4)? [39m    *******************************************
-[34mI20180108-13:48:00.198(-4)? [39m
-[34mI20180108-13:48:00.296(-4)? [39m1515433680295 Available /dev/ttyUSB0  
-[34mI20180108-13:48:00.305(-4)? [39m1515433680304 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:48:03.257(-4)? [39m
-[34mI20180108-13:48:03.258(-4)? [39m        *******************************************
-[34mI20180108-13:48:03.258(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:48:03.262(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:48:03.262(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:48:03.263(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:48:03.263(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:48:03.263(-4)? [39m        *           PORT: 29905     *
-[34mI20180108-13:48:03.264(-4)? [39m        *******************************************
-[34mI20180108-13:48:03.264(-4)? [39m
-[34mI20180108-13:48:04.765(-4)? [39m0 aqui
-[34mI20180108-13:48:05.801(-4)? [39m1 aqui
-[34mI20180108-13:48:06.598(-4)? [39m0 aqui
-[34mI20180108-13:48:07.932(-4)? [39m1 aqui
-[34mI20180108-13:48:08.614(-4)? [39m0 aqui
-[34mI20180108-13:48:09.907(-4)? [39m1 aqui
-=> Server modified -- restarting...                                   [34mW20180108-13:48:31.244(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:48:31.246(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:48:31.246(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:48:31.247(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:48:31.247(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:48:31.247(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:48:31.248(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:48:31.248(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:48:31.604(-4)? [39m
-[34mI20180108-13:48:31.605(-4)? [39m    *******************************************
-[34mI20180108-13:48:31.605(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:48:31.605(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:48:31.606(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:48:31.606(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:48:31.606(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:48:31.607(-4)? [39m    *           PORT: 29352     *
-[34mI20180108-13:48:31.607(-4)? [39m    *******************************************
-[34mI20180108-13:48:31.608(-4)? [39m
-[34mI20180108-13:48:31.695(-4)? [39m1515433711694 Available /dev/ttyUSB0  
-[34mI20180108-13:48:31.703(-4)? [39m1515433711703 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:48:34.657(-4)? [39m
-[34mI20180108-13:48:34.658(-4)? [39m        *******************************************
-[34mI20180108-13:48:34.659(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:48:34.659(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:48:34.662(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:48:34.663(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:48:34.663(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:48:34.663(-4)? [39m        *           PORT: 29352     *
-[34mI20180108-13:48:34.664(-4)? [39m        *******************************************
-[34mI20180108-13:48:34.664(-4)? [39m
-[34mI20180108-13:48:35.278(-4)? [39m1 aqui
-=> Server modified -- restarting...                                   [34mW20180108-13:48:54.179(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:48:54.180(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:48:54.180(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:48:54.180(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:48:54.181(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:48:54.181(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:48:54.182(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:48:54.182(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:48:54.555(-4)? [39m
-[34mI20180108-13:48:54.556(-4)? [39m    *******************************************
-[34mI20180108-13:48:54.556(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:48:54.556(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:48:54.557(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:48:54.557(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:48:54.557(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:48:54.557(-4)? [39m    *           PORT: 27428     *
-[34mI20180108-13:48:54.557(-4)? [39m    *******************************************
-[34mI20180108-13:48:54.558(-4)? [39m
-[34mI20180108-13:48:54.658(-4)? [39m1515433734657 Available /dev/ttyUSB0  
-[34mI20180108-13:48:54.666(-4)? [39m1515433734666 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:48:57.622(-4)? [39m
-[34mI20180108-13:48:57.623(-4)? [39m        *******************************************
-[34mI20180108-13:48:57.624(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:48:57.625(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:48:57.625(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:48:57.626(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:48:57.626(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:48:57.627(-4)? [39m        *           PORT: 27428     *
-[34mI20180108-13:48:57.628(-4)? [39m        *******************************************
-[34mI20180108-13:48:57.628(-4)? [39m
-[34mI20180108-13:49:08.712(-4)? [39m1 aqui
-[34mI20180108-13:49:08.798(-4)? [39mException while invoking method 'sendAction' ReferenceError: leds is not defined
-[34mI20180108-13:49:08.798(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:23:17)
-[34mI20180108-13:49:08.799(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:49:08.799(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:49:08.799(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:49:08.800(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:49:08.800(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:49:08.800(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:49:08.800(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:49:08.801(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:49:08.801(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-[34mI20180108-13:49:09.372(-4)? [39m0 aqui
-[34mI20180108-13:49:09.374(-4)? [39mException while invoking method 'sendAction' ReferenceError: leds is not defined
-[34mI20180108-13:49:09.375(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:25:17)
-[34mI20180108-13:49:09.375(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:49:09.375(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:49:09.375(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:49:09.376(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:49:09.376(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:49:09.376(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:49:09.376(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:49:09.377(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:49:09.377(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-=> Server modified -- restarting...                                   [34mW20180108-13:49:13.793(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:49:13.794(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:49:13.794(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:49:13.795(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:49:13.795(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:49:13.795(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:49:13.795(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:49:13.796(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:49:14.146(-4)? [39m
-[34mI20180108-13:49:14.147(-4)? [39m    *******************************************
-[34mI20180108-13:49:14.147(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:49:14.147(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:49:14.148(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:49:14.148(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:49:14.148(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:49:14.149(-4)? [39m    *           PORT: 26846     *
-[34mI20180108-13:49:14.149(-4)? [39m    *******************************************
-[34mI20180108-13:49:14.150(-4)? [39m
-[34mI20180108-13:49:14.238(-4)? [39m1515433754237 Available /dev/ttyUSB0  
-[34mI20180108-13:49:14.246(-4)? [39m1515433754246 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:49:17.196(-4)? [39m
-[34mI20180108-13:49:17.197(-4)? [39m        *******************************************
-[34mI20180108-13:49:17.197(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:49:17.197(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:49:17.198(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:49:17.198(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:49:17.199(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:49:17.199(-4)? [39m        *           PORT: 26846     *
-[34mI20180108-13:49:17.199(-4)? [39m        *******************************************
-[34mI20180108-13:49:17.200(-4)? [39m
-[34mI20180108-13:49:19.547(-4)? [39m1 aqui
-[34mI20180108-13:49:20.241(-4)? [39m0 aqui
-[34mI20180108-13:49:20.864(-4)? [39m1 aqui
-[34mI20180108-13:49:21.354(-4)? [39m0 aqui
-[34mI20180108-13:49:21.890(-4)? [39m1 aqui
-[34mI20180108-13:49:22.281(-4)? [39m0 aqui
-[34mI20180108-13:49:22.709(-4)? [39m1 aqui
-=> Server modified -- restarting...                                   [34mW20180108-13:49:29.922(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:49:29.923(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:49:29.923(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:49:29.923(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:49:29.923(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:49:29.924(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:49:29.924(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:49:29.924(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:49:30.321(-4)? [39m
-[34mI20180108-13:49:30.322(-4)? [39m    *******************************************
-[34mI20180108-13:49:30.322(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:49:30.323(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:49:30.323(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:49:30.323(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:49:30.324(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:49:30.324(-4)? [39m    *           PORT: 20400     *
-[34mI20180108-13:49:30.324(-4)? [39m    *******************************************
-[34mI20180108-13:49:30.325(-4)? [39m
-[34mI20180108-13:49:30.423(-4)? [39m1515433770422 Available /dev/ttyUSB0  
-[34mI20180108-13:49:30.431(-4)? [39m1515433770431 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:49:33.383(-4)? [39m
-[34mI20180108-13:49:33.384(-4)? [39m        *******************************************
-[34mI20180108-13:49:33.384(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:49:33.385(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:49:33.385(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:49:33.385(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:49:33.385(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:49:33.386(-4)? [39m        *           PORT: 20400     *
-[34mI20180108-13:49:33.386(-4)? [39m        *******************************************
-[34mI20180108-13:49:33.386(-4)? [39m
-[34mI20180108-13:49:34.145(-4)? [39m1 aqui
-[34mI20180108-13:49:35.746(-4)? [39m0 aqui
-[34mI20180108-13:49:36.355(-4)? [39m1 aqui
-[34mI20180108-13:49:36.847(-4)? [39m0 aqui
-[34mI20180108-13:49:37.139(-4)? [39m1 aqui
-=> Server modified -- restarting...                                   [34mW20180108-13:49:46.075(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:49:46.076(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:49:46.076(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:49:46.077(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:49:46.077(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:49:46.078(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:49:46.078(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:49:46.078(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:49:46.427(-4)? [39m
-[34mI20180108-13:49:46.427(-4)? [39m    *******************************************
-[34mI20180108-13:49:46.428(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:49:46.428(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:49:46.428(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:49:46.429(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:49:46.429(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:49:46.429(-4)? [39m    *           PORT: 21994     *
-[34mI20180108-13:49:46.430(-4)? [39m    *******************************************
-[34mI20180108-13:49:46.430(-4)? [39m
-[34mI20180108-13:49:46.521(-4)? [39m1515433786520 Available /dev/ttyUSB0  
-[34mI20180108-13:49:46.529(-4)? [39m1515433786529 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:49:49.482(-4)? [39m
-[34mI20180108-13:49:49.483(-4)? [39m        *******************************************
-[34mI20180108-13:49:49.483(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:49:49.484(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:49:49.484(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:49:49.485(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:49:49.485(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:49:49.486(-4)? [39m        *           PORT: 21994     *
-[34mI20180108-13:49:49.486(-4)? [39m        *******************************************
-[34mI20180108-13:49:49.486(-4)? [39m
-=> Server modified -- restarting...                                   [34mW20180108-13:49:53.479(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:49:53.480(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:49:53.481(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:49:53.481(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:49:53.482(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:49:53.482(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:49:53.482(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:49:53.482(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:49:53.842(-4)? [39m
-[34mI20180108-13:49:53.842(-4)? [39m    *******************************************
-[34mI20180108-13:49:53.843(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:49:53.843(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:49:53.843(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:49:53.844(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:49:53.844(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:49:53.844(-4)? [39m    *           PORT: 21413     *
-[34mI20180108-13:49:53.845(-4)? [39m    *******************************************
-[34mI20180108-13:49:53.845(-4)? [39m
-[34mI20180108-13:49:53.933(-4)? [39m1515433793932 Available /dev/ttyUSB0  
-[34mI20180108-13:49:53.942(-4)? [39m1515433793941 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:49:56.899(-4)? [39m
-[34mI20180108-13:49:56.900(-4)? [39m        *******************************************
-[34mI20180108-13:49:56.900(-4)? [39m        *           Starting homeSystem           *
-[34mI20180108-13:49:56.900(-4)? [39m        *         Author: Augusto Alvarez         *
-[34mI20180108-13:49:56.901(-4)? [39m        *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:49:56.901(-4)? [39m        * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:49:56.901(-4)? [39m        * URL: http://192.168.1.104            *
-[34mI20180108-13:49:56.902(-4)? [39m        *           PORT: 21413     *
-[34mI20180108-13:49:56.902(-4)? [39m        *******************************************
-[34mI20180108-13:49:56.902(-4)? [39m
-=> Server modified -- restarting...                                   [34mW20180108-13:49:59.244(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:49:59.245(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:49:59.246(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:49:59.247(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:49:59.247(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:49:59.248(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:49:59.248(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:49:59.248(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:49:59.691(-4)? [39m
-[34mI20180108-13:49:59.692(-4)? [39m    *******************************************
-[34mI20180108-13:49:59.692(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:49:59.692(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:49:59.693(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:49:59.693(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:49:59.693(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:49:59.693(-4)? [39m    *           PORT: 24666     *
-[34mI20180108-13:49:59.693(-4)? [39m    *******************************************
-[34mI20180108-13:49:59.694(-4)? [39m
-[34mI20180108-13:49:59.795(-4)? [39m1515433799794 Available /dev/ttyUSB0  
-[34mI20180108-13:49:59.803(-4)? [39m1515433799803 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-=> Server modified -- restarting...                                   [34mW20180108-13:51:13.731(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:51:13.732(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:51:13.732(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:51:13.732(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:51:13.733(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:51:13.733(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:51:13.733(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:51:13.733(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-=> Client modified -- refreshing
-[34mI20180108-13:51:14.617(-4)? [39m
-[34mI20180108-13:51:14.618(-4)? [39m    *******************************************
-[34mI20180108-13:51:14.618(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:51:14.619(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:51:14.619(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:51:14.619(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:51:14.619(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:51:14.619(-4)? [39m    *           PORT: 26717     *
-[34mI20180108-13:51:14.619(-4)? [39m    *******************************************
-[34mI20180108-13:51:14.620(-4)? [39m
-[34mI20180108-13:51:14.620(-4)? [39m1515433874284 Available /dev/ttyUSB0  
-[34mI20180108-13:51:14.620(-4)? [39m1515433874295 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:51:18.863(-4)? [39mException while invoking method 'sendAction' TypeError: Cannot read property 'on' of undefined
-[34mI20180108-13:51:18.864(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:10:27)
-[34mI20180108-13:51:18.864(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:51:18.864(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:51:18.865(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:51:18.865(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:51:18.866(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:51:18.867(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:51:18.867(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:51:18.867(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:51:18.868(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-[34mI20180108-13:51:19.869(-4)? [39mException while invoking method 'sendAction' TypeError: Cannot read property 'off' of undefined
-[34mI20180108-13:51:19.870(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:8:27)
-[34mI20180108-13:51:19.870(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:51:19.870(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:51:19.870(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:51:19.871(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:51:19.872(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:51:19.872(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:51:19.872(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:51:19.873(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:51:19.876(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-[34mI20180108-13:51:20.398(-4)? [39mException while invoking method 'sendAction' TypeError: Cannot read property 'on' of undefined
-[34mI20180108-13:51:20.399(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:10:27)
-[34mI20180108-13:51:20.399(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:51:20.399(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:51:20.400(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:51:20.400(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:51:20.401(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:51:20.401(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:51:20.402(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:51:20.402(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:51:20.403(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-[34mI20180108-13:51:40.883(-4)? [39mException while invoking method 'sendAction' TypeError: Cannot read property 'off' of undefined
-[34mI20180108-13:51:40.884(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:8:27)
-[34mI20180108-13:51:40.885(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:51:40.885(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:51:40.885(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:51:40.886(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:51:40.886(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:51:40.886(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:51:40.886(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:51:40.887(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:51:40.887(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-[34mI20180108-13:51:41.255(-4)? [39mException while invoking method 'sendAction' TypeError: Cannot read property 'on' of undefined
-[34mI20180108-13:51:41.255(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:10:27)
-[34mI20180108-13:51:41.256(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:51:41.256(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:51:41.257(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:51:41.257(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:51:41.257(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:51:41.258(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:51:41.258(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:51:41.258(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:51:41.259(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-=> Server modified -- restarting...                                   [34mW20180108-13:52:03.510(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:52:03.510(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:52:03.511(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:52:03.512(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:52:03.512(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:52:03.512(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:52:03.512(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:52:03.513(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:52:03.880(-4)? [39m
-[34mI20180108-13:52:03.881(-4)? [39m    *******************************************
-[34mI20180108-13:52:03.881(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:52:03.882(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:52:03.882(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:52:03.888(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:52:03.888(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:52:03.889(-4)? [39m    *           PORT: 20066     *
-[34mI20180108-13:52:03.889(-4)? [39m    *******************************************
-[34mI20180108-13:52:03.890(-4)? [39m
-[34mI20180108-13:52:03.978(-4)? [39m1515433923977 Available /dev/ttyUSB0  
-[34mI20180108-13:52:03.986(-4)? [39m1515433923986 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:52:12.145(-4)? [39m9
-[34mI20180108-13:52:12.186(-4)? [39m9
-[34mI20180108-13:52:12.188(-4)? [39m9
-[34mI20180108-13:52:12.189(-4)? [39m9
-[34mI20180108-13:52:12.190(-4)? [39m9
-[34mI20180108-13:52:12.190(-4)? [39m9
-[34mI20180108-13:52:12.191(-4)? [39m9
-[34mI20180108-13:52:12.192(-4)? [39m9
-[34mI20180108-13:52:12.193(-4)? [39m9
-[34mI20180108-13:52:15.347(-4)? [39m9
-[34mI20180108-13:52:16.575(-4)? [39m9
-[34mI20180108-13:52:17.234(-4)? [39m9
-[34mI20180108-13:52:17.759(-4)? [39m9
-[34mI20180108-13:52:18.093(-4)? [39m9
-=> Server modified -- restarting...                                   [34mW20180108-13:52:56.075(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:52:56.076(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:52:56.076(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:52:56.076(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:52:56.076(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:52:56.077(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:52:56.077(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:52:56.077(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:52:56.462(-4)? [39m
-[34mI20180108-13:52:56.462(-4)? [39m    *******************************************
-[34mI20180108-13:52:56.463(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:52:56.463(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:52:56.463(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:52:56.464(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:52:56.464(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:52:56.464(-4)? [39m    *           PORT: 21696     *
-[34mI20180108-13:52:56.464(-4)? [39m    *******************************************
-[34mI20180108-13:52:56.465(-4)? [39m
-[34mI20180108-13:52:56.558(-4)? [39m1515433976557 Available /dev/ttyUSB0  
-[34mI20180108-13:52:56.566(-4)? [39m1515433976566 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:53:03.178(-4)? [39m9
-[34mI20180108-13:53:03.342(-4)? [39mException while invoking method 'sendAction' TypeError: Cannot read property 'on' of undefined
-[34mI20180108-13:53:03.343(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:11:27)
-[34mI20180108-13:53:03.343(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:53:03.343(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:53:03.343(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:53:03.344(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:53:03.344(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:53:03.344(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:53:03.344(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:53:03.344(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:53:03.345(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-[34mI20180108-13:53:04.239(-4)? [39m9
-[34mI20180108-13:53:04.243(-4)? [39mException while invoking method 'sendAction' TypeError: Cannot read property 'off' of undefined
-[34mI20180108-13:53:04.244(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:9:27)
-[34mI20180108-13:53:04.244(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:53:04.244(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:53:04.245(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:53:04.245(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:53:04.246(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:53:04.246(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:53:04.246(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:53:04.247(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:53:04.247(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-[34mI20180108-13:53:04.749(-4)? [39m9
-[34mI20180108-13:53:04.751(-4)? [39mException while invoking method 'sendAction' TypeError: Cannot read property 'on' of undefined
-[34mI20180108-13:53:04.751(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:11:27)
-[34mI20180108-13:53:04.752(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:53:04.752(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:53:04.752(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:53:04.753(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:53:04.753(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:53:04.753(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:53:04.754(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:53:04.754(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:53:04.754(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-[34mI20180108-13:53:04.918(-4)? [39m9
-[34mI20180108-13:53:04.921(-4)? [39mException while invoking method 'sendAction' TypeError: Cannot read property 'off' of undefined
-[34mI20180108-13:53:04.922(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:9:27)
-[34mI20180108-13:53:04.922(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:53:04.922(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:53:04.923(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:53:04.923(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:53:04.923(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:53:04.923(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:53:04.924(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:53:04.924(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:53:04.924(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-=> Client modified -- refreshing
-=> Server modified -- restarting...                                   [34mW20180108-13:53:59.568(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:53:59.569(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:53:59.569(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:53:59.569(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:53:59.570(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:53:59.570(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:53:59.571(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:53:59.571(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:53:59.955(-4)? [39m
-[34mI20180108-13:53:59.956(-4)? [39m    *******************************************
-[34mI20180108-13:53:59.956(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:53:59.956(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:53:59.957(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:53:59.957(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:53:59.957(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:53:59.958(-4)? [39m    *           PORT: 28353     *
-[34mI20180108-13:53:59.958(-4)? [39m    *******************************************
-[34mI20180108-13:53:59.958(-4)? [39m
-[34mI20180108-13:54:00.053(-4)? [39m1515434040052 Available /dev/ttyUSB0  
-[34mI20180108-13:54:00.061(-4)? [39m1515434040061 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:54:08.341(-4)? [39m[ 9 ]
-[34mI20180108-13:54:08.499(-4)? [39mException while invoking method 'sendAction' TypeError: Cannot read property 'off' of undefined
-[34mI20180108-13:54:08.500(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:9:27)
-[34mI20180108-13:54:08.500(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:54:08.500(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:54:08.501(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:54:08.501(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:54:08.501(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:54:08.501(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:54:08.501(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:54:08.502(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:54:08.502(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-[34mI20180108-13:54:08.749(-4)? [39m[ 9 ]
-[34mI20180108-13:54:08.750(-4)? [39mException while invoking method 'sendAction' TypeError: Cannot read property 'on' of undefined
-[34mI20180108-13:54:08.751(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:11:27)
-[34mI20180108-13:54:08.751(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:54:08.752(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:54:08.752(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:54:08.752(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:54:08.752(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:54:08.753(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:54:08.753(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:54:08.753(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:54:08.753(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-=> Client modified -- refreshing
-=> Server modified -- restarting...                                   [34mW20180108-13:54:37.700(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:54:37.700(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:54:37.701(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:54:37.701(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:54:37.701(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:54:37.702(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:54:37.702(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:54:37.702(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:54:38.085(-4)? [39m
-[34mI20180108-13:54:38.086(-4)? [39m    *******************************************
-[34mI20180108-13:54:38.086(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:54:38.086(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:54:38.086(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:54:38.086(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:54:38.087(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:54:38.087(-4)? [39m    *           PORT: 29630     *
-[34mI20180108-13:54:38.087(-4)? [39m    *******************************************
-[34mI20180108-13:54:38.087(-4)? [39m
-[34mI20180108-13:54:38.194(-4)? [39m1515434078194 Available /dev/ttyUSB0  
-[34mI20180108-13:54:38.203(-4)? [39m1515434078202 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-[34mI20180108-13:54:42.501(-4)? [39m9
-[34mI20180108-13:54:42.633(-4)? [39mException while invoking method 'sendAction' TypeError: Cannot read property 'off' of undefined
-[34mI20180108-13:54:42.633(-4)? [39m    at DDPCommon.MethodInvocation.sendAction (server/methods/controlArduino.js:9:27)
-[34mI20180108-13:54:42.633(-4)? [39m    at maybeAuditArgumentChecks (packages/ddp-server/livedata_server.js:1768:12)
-[34mI20180108-13:54:42.634(-4)? [39m    at DDP._CurrentMethodInvocation.withValue (packages/ddp-server/livedata_server.js:719:19)
-[34mI20180108-13:54:42.634(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:54:42.634(-4)? [39m    at DDPServer._CurrentWriteFence.withValue (packages/ddp-server/livedata_server.js:717:46)
-[34mI20180108-13:54:42.635(-4)? [39m    at Meteor.EnvironmentVariable.EVp.withValue (packages/meteor.js:1186:15)
-[34mI20180108-13:54:42.635(-4)? [39m    at Promise (packages/ddp-server/livedata_server.js:715:46)
-[34mI20180108-13:54:42.635(-4)? [39m    at new Promise (<anonymous>)
-[34mI20180108-13:54:42.636(-4)? [39m    at Session.method (packages/ddp-server/livedata_server.js:689:23)
-[34mI20180108-13:54:42.636(-4)? [39m    at packages/ddp-server/livedata_server.js:559:43
-=> Server modified -- restarting...                                   [34mW20180108-13:55:52.924(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:55:52.925(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:55:52.925(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:55:52.925(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:55:52.926(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:55:52.926(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:55:52.926(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:55:52.926(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:55:53.323(-4)? [39m
-[34mI20180108-13:55:53.323(-4)? [39m    *******************************************
-[34mI20180108-13:55:53.324(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:55:53.324(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:55:53.324(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:55:53.325(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:55:53.325(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:55:53.325(-4)? [39m    *           PORT: 20688     *
-[34mI20180108-13:55:53.325(-4)? [39m    *******************************************
-[34mI20180108-13:55:53.326(-4)? [39m
-[34mI20180108-13:55:53.428(-4)? [39m1515434153427 Available /dev/ttyUSB0  
-[34mI20180108-13:55:53.436(-4)? [39m1515434153436 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-=> Server modified -- restarting...                                   [34mW20180108-13:55:57.545(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:55:57.546(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:55:57.546(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:55:57.547(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:55:57.547(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:55:57.548(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:55:57.548(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:55:57.548(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:55:57.954(-4)? [39m
-[34mI20180108-13:55:57.955(-4)? [39m    *******************************************
-[34mI20180108-13:55:57.955(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:55:57.955(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:55:57.955(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:55:57.956(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:55:57.956(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:55:57.956(-4)? [39m    *           PORT: 26883     *
-[34mI20180108-13:55:57.956(-4)? [39m    *******************************************
-[34mI20180108-13:55:57.956(-4)? [39m
-[34mI20180108-13:55:58.059(-4)? [39m1515434158058 Available /dev/ttyUSB0  
-[34mI20180108-13:55:58.067(-4)? [39m1515434158067 Connected /dev/ttyUSB0  
-=> Meteor server restarted
-=> Server modified -- restarting...                                   [34mW20180108-13:56:09.962(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
-[34mW20180108-13:56:09.963(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
-[34mW20180108-13:56:09.963(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
-[34mW20180108-13:56:09.963(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
-[34mW20180108-13:56:09.964(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:56:09.964(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
-[34mW20180108-13:56:09.964(-4)? (STDERR) [39m[35m[39m
-[34mW20180108-13:56:09.964(-4)? (STDERR) [39m[35min the root directory of your application.[39m
-[34mI20180108-13:56:10.326(-4)? [39m
-[34mI20180108-13:56:10.327(-4)? [39m    *******************************************
-[34mI20180108-13:56:10.327(-4)? [39m    *           Starting homeSystem           *
-[34mI20180108-13:56:10.327(-4)? [39m    *         Author: Augusto Alvarez         *
-[34mI20180108-13:56:10.328(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
-[34mI20180108-13:56:10.328(-4)? [39m    * https://github.com/laugustol/homeSystem *
-[34mI20180108-13:56:10.328(-4)? [39m    * URL: http://192.168.1.104            *
-[34mI20180108-13:56:10.329(-4)? [39m    *           PORT: 25503     *
-[34mI20180108-13:56:10.329(-4)? [39m    *******************************************
-[34mI20180108-13:56:10.329(-4)? [39m
-[34mI20180108-13:56:10.430(-4)? [39m1515434170430 Available /dev/ttyUSB0  
-[34mI20180108-13:56:10.441(-4)? [39m1515434170439 Connected /dev/ttyUSB0  
+=> Server modified -- restarting...                                   [34mW20180108-17:13:14.805(-4)? (STDERR) [39m[35mNote: you are using a pure-JavaScript implementation of bcrypt.[39m
+[34mW20180108-17:13:14.806(-4)? (STDERR) [39m[35mWhile this implementation will work correctly, it is known to be[39m
+[34mW20180108-17:13:14.807(-4)? (STDERR) [39m[35mapproximately three times slower than the native implementation.[39m
+[34mW20180108-17:13:14.808(-4)? (STDERR) [39m[35mIn order to use the native implementation instead, run[39m
+[34mW20180108-17:13:14.808(-4)? (STDERR) [39m[35m[39m
+[34mW20180108-17:13:14.809(-4)? (STDERR) [39m[35m  meteor npm install --save bcrypt[39m
+[34mW20180108-17:13:14.809(-4)? (STDERR) [39m[35m[39m
+[34mW20180108-17:13:14.810(-4)? (STDERR) [39m[35min the root directory of your application.[39m
+[34mI20180108-17:13:15.189(-4)? [39m
+[34mI20180108-17:13:15.190(-4)? [39m    *******************************************
+[34mI20180108-17:13:15.190(-4)? [39m    *           Starting homeSystem           *
+[34mI20180108-17:13:15.190(-4)? [39m    *         Author: Augusto Alvarez         *
+[34mI20180108-17:13:15.191(-4)? [39m    *    Email: augustoalvarez05@gmail.com    *
+[34mI20180108-17:13:15.191(-4)? [39m    * https://github.com/laugustol/homeSystem *
+[34mI20180108-17:13:15.191(-4)? [39m    * URL: http://192.168.1.104            *
+[34mI20180108-17:13:15.192(-4)? [39m    *           PORT: 21521     *
+[34mI20180108-17:13:15.192(-4)? [39m    *******************************************
+[34mI20180108-17:13:15.192(-4)? [39m
+[34mI20180108-17:13:15.281(-4)? [39m1515445995280 Board Looking for connected device  
 => Meteor server restarted
